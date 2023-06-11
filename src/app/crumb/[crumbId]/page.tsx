@@ -19,8 +19,8 @@ export default function CrumbPage({ params }: { params: { crumbId: string } }) {
           <p className="mt-4 font-semibold mb-1">
             Congratulations, you found a secret spot on the internet :) We are
             trying to build a community of people all over the world that find
-            randomly placed hints left by others. If you want to know what we
-            are up to,
+            randomly placed hints left by others. <br /> If you want to know
+            what we are up to,
           </p>
           <a
             className="hover:text-orange text-xl font-bold text-middle-brown"
