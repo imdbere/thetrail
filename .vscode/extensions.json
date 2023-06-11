@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "prisma.prisma",
+    "mhutchie.git-graph",
+    "bradlc.vscode-tailwindcss",
+    "ms-vscode.js-debug",
+    "esbenp.prettier-vscode",
+    "yoavbls.pretty-ts-errors"
+  ]
+}
