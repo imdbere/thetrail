@@ -1,7 +1,7 @@
 import { MainContainer } from "@/components/MainContainer";
 import Image from "next/image";
 import { redirect } from "next/navigation";
-import Logo from "../../logo.png";
+import Logo from "../../public/logo.png";
 import { validCrumbs } from "../validCrumbs";
 
 const invitationLink = "https://discord.gg/xNBVzDYXXJ";
@@ -16,7 +16,7 @@ export default function CrumbPage({ params }: { params: { crumbId: string } }) {
     <MainContainer>
       <div className="grow flex flex-col justify-center items-center">
         <div className="max-w-2xl -mt-5 text-center text-light-brown text-lg font-normal">
-          <Image className="m-auto mb-6" src={Logo} alt="Logo" width={260} />
+          <Image className="m-auto mb-6 hover-grow" src={Logo} alt="Logo" width={260} />
           <h1 className="text-dark-brown font-bold text-4xl">The Trail</h1>
           <h3 className="text-middle-brown">
             <span className="font-semibold">Found Crumb Id: </span>

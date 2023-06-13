@@ -3,7 +3,7 @@
 import { MainContainer } from "@/components/MainContainer";
 import Image from "next/image";
 import { useState } from "react";
-import NotFound from "./not_found.png";
+import NotFound from "./public/not_found.png";
 
 export default function NotFoundPage({params,}: {params: { crumbId: string };}) {
   const [typingPerc, setTypingPerc] = useState(0);
@@ -19,12 +19,12 @@ export default function NotFoundPage({params,}: {params: { crumbId: string };}) 
 
   
   if(typingPerc > 0 && typingPerc < 100) {
-    let barStyle = {
+    barStyle = {
       background: `linear-gradient(90deg, rgba(131, 121, 31, 0.504) ${typingPerc}%, transparent 0%)`,
       margin: "0px 5px",
     }
   } else if(typingPerc === 100){
-    barContent = (<><button className="bg-light-brown p-1 hover-grow">Submit</button></>);
+    barContent = (<><button className="p-1 hover-grow" >Submit</button></>);
   }
 
 
